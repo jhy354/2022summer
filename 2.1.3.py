@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def func1():
     a = input("a:")
     b = input("b:")

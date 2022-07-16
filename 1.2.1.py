@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from math import sqrt
 
 if __name__ == "__main__":
