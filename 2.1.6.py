@@ -19,6 +19,7 @@ if __name__ == "__main__":
         print(i)
     divide_line()
 
+    # 倒序输出
     cnt = 0
     for i in reversed(info):
         if cnt >= 2:
