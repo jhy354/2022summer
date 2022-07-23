@@ -8,6 +8,6 @@ if __name__ == "__main__":
             print('正常')
     else:
         print('平均车速',round(v, 1))
-        print('超速')  # 错误程序将这行放在了if-else外面，所以无论if判断的结果，都会输出"超速"
+        print('超速')    # 错误程序将这行放在了if-else外面，所以无论if判断的结果，都会输出"超速"
     
     exit(0)

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-# decorator(duo ci yi ju)
+# decorator(多 此 一 举)
 def io(func):
     def wrapper():
         num = int(input("number:"))
@@ -42,7 +42,6 @@ if __name__ == "__main__":
     int_ = 1
     print(type(int_))
 
-    # intersting
     sub()
     time()
     div()
