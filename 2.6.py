@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 # P99字符画
-# serarr? asd?变量名起得真奇怪(bushi
 
 from PIL import Image
-from os import system as shell
-from platform import system
 
+# ???serarr是啥意思?
 serarr = \
 [
     '@', '#', '$', '%',
@@ -13,7 +11,7 @@ serarr = \
     '/', '{', '[', '(',
     '|', '!', '^', '~',
     '-', '_', ':', ';',
-    ',', '.', '`', ' '
+    ',', '.', '`', ' ',
 ]
 count = len(serarr)
 
@@ -31,20 +29,15 @@ def to_text(image_file):
 
 if __name__ == "__main__":
     image_name = input("Image Name?\n>")
-    
-    if system() == "Windows":
-        shell_code = r"copy nul ASCII_ART.txt"    # 新建空白文件,cmd反人类操作
-    elif system() == "Linux":
-        shell_code = rf"touch ./ASCII_ART.txt"
-    else:
-        print("Please use it under Windows or Linux")
-        exit(1)
+    zoom_ratio = float(input("Image Zoom Ratio?\n>"))
 
     image_file = Image.open(rf"{image_name}.jpg")
-    image_file = image_file.resize(( int(image_file.size[0]*0.5), int(image_file.size[1]*0.25) ))    # 原参数0.9, 0.5
+    # 原参数0.9, 0.5
+    w = int(image_file.size[0]*0.9*zoom_ratio)
+    h = int(image_file.size[1]*0.5*zoom_ratio)
+    image_file = image_file.resize((w, h))
 
-    shell(shell_code)
-    f = open(r"ASCII_ART.txt", 'a')
+    f = open(r"ASCII_ART.txt", 'w')
     f.truncate(0)    # 清空文件
     f.write(to_text(image_file))
     f.close()
