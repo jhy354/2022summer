@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-
 from math import sqrt
 
-def area(a:int, b:int, c:int):
+
+def area(a : int, b : int, c : int) -> float:
     p = (a + b + c)/2
     s = sqrt(p * (p-a) * (p-b) * (p-c))
     return s

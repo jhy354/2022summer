@@ -16,7 +16,7 @@ Expected Output:
 4.1
 '''
 
-def calc_t(step : int):
+def calc_t(step : int) -> float:
     t = 0
     if step >= 1000 and step <3000:
         t = 0.3

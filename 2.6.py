@@ -3,7 +3,6 @@
 
 from PIL import Image
 
-# ???serarr是啥意思?
 serarr = \
 [
     '@', '#', '$', '%',
@@ -16,7 +15,7 @@ serarr = \
 count = len(serarr)
 
 
-def to_text(image_file):
+def to_text(image_file) -> str:
     asd = ''
     for h in range(0, image_file.size[1]):
         for w in range(0, image_file.size[0]):

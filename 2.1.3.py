@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def func1():
+def func1() -> None:
     a = input("a:")
     b = input("b:")
     # check val type
@@ -8,7 +8,7 @@ def func1():
     return
 
 
-def func2():
+def func2() -> None:
     a = input("a:")
     b = input("b:")
     if a == b:

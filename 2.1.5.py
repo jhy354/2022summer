@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-# decorator(多 此 一 举)
+# decorator(多此一举)
 def io(func):
     def wrapper():
         num = int(input("number:"))

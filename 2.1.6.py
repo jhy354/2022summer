@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
 
-def divide_line():
+def divide_line() -> None:
     print('-'*20)
+    return
 
 
 if __name__ == "__main__":
