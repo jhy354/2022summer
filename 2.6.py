@@ -3,8 +3,7 @@
 
 from PIL import Image
 
-serarr = \
-[
+serarr = [
     '@', '#', '$', '%',
     '&', '?', '*', 'o',
     '/', '{', '[', '(',
